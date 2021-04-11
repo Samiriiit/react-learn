@@ -1,0 +1,218 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.login-box,
+.register-box, .edit-page{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(#141e30, #243b55);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2,
+.register-box h2,.edit-page h4 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box,
+.register-box .user-box,
+.edit-page .user-box{
+  position: relative;
+}
+
+.login-box .user-box input,
+.register-box .user-box input,
+.edit-page .user-box input
+{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label,
+.register-box .user-box label 
+
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label,
+.register-box .user-box input:focus ~ label,
+.register-box .user-box input:valid ~ label,
+.edit-page .user-box input:focus ~ label,
+.edit-page .user-box input:valid ~ label
+{
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form button,
+.register-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box button:hover,
+.register-box button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #03e9f4, 0 0 15px #03e9f4, 0 0 10px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.error {
+  color: #fff;
+}
+
+/* tbody {
+  display: grid;
+  column-gap: ;
+} */
+
+img {
+  height: 30px;
+  border-radius: 50%;
+}
+.dashboard-container {
+    
+  width: 100%;
+  height: 100%;
+  background-color: #d4d3d3;
+  padding: 20px;
+  
+}
+.listWrap {
+    
+  height: 800px;
+  width: 1000px;
+  
+}
+.list {
+    
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  white-space: nowrap;
+  width: 100%;
+  
+}
+.list li {
+    
+  background-color: #f0f0f0;
+  display: table-row;
+  color: #5c5c5c;
+
+}
+.list th {
+    
+  text-align: left;
+  display: table-cell;
+  padding: 10px;
+  vertical-align: middle;
+  
+}
+td{
+  text-align: left;
+  display: table-cell;
+  padding: 6px;
+  vertical-align: middle; 
+}
+.list tr:nth-child(odd) {
+    
+  background-color: #f2f2f2;
+  display: table-row;
+  font-size: 9pt;
+  color: #5c5c5c;
+
+}
+
+.list tr:nth-child(odd):hover {
+  
+  background-color: #dadada;
+
+}
+
+.list tr:nth-child(even) {
+  
+  background-color: #e8e8e8;
+  display: table-row;
+  font-size: 9pt;
+  color: #5c5c5c;
+
+}
+.list tr:nth-child(even):hover {
+    
+  background-color: #dadada;
+
+}
+
+.list tr:nth-child(1) th:first-child {
+  
+  border-top-left-radius: 6px;
+  
+}
+
+.list tr:nth-child(1) th:last-child {
+  
+  border-top-right-radius: 6px;
+  
+}
+
+
+.list tl:nth-child(1) {
+  
+  background-color: #201c2b;
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #b8b5c0;
+}
+.list li:nth-child(1) th {
+    
+  border-bottom: 2px solid #7d5bbe;
+  padding: 14px;
+  
+}
+button{
+  background: rgb(72, 113, 175); border-radius: 8px; color: white;}
